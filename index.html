@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Final - Home</title>
+	<link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1><img src="Minesweeper.png" alt="Busca Minas" class="logo-title">Busca Minas</h1>
+	</header>
+	<main>
+        <form id="gameForm" onsubmit="return false;">  
+            <p>Tamaño del tablero:</p>
+            <input type="text" id="width" placeholder="ancho..." required>
+            <input type="text" id="height" placeholder="alto..." required>
+            <p>Número de minas:</p>
+            <input type="text" id="minas" placeholder="Número de minas" required>
+            <button type="button" id="startButton">Iniciar Juego</button>
+            <button type="button" id="toggleBandera" class="">🚩</button>
+            <span id="contadorBanderas">Banderas: 0</span>
+        </form>
+        <div id="roomInfo" class="room-info">
+            <span id="roomIdText">Sala: —</span>
+            <button type="button" id="copyRoomIdButton" disabled>Copiar ID</button>
+            <button type="button" id="restartButton" hidden>Jugar de nuevo</button>
+            <div id="roomTip"></div>
+        </div>
+        <div id="tablero"></div>
+        <div id="resultado"></div>
+	</main>
+	<footer>
+	</footer>
+</body>
+</html>
