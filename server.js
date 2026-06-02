@@ -1,7 +1,7 @@
 const http = require('http');
 const WebSocket = require('ws');
 
-const port = 8080;
+const port = 8000;
 
 function crearTablero(width, height, minas) {
   const tablero = Array.from({ length: height }, () =>

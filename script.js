@@ -15,7 +15,7 @@ function inicializarConexion() {
     // Falls back to localhost when opened via file:// or when hostname is empty.
     const wsScheme = (location.protocol === 'https:') ? 'wss:' : 'ws:';
     const host = (location.hostname && location.hostname.length > 0) ? location.hostname : 'localhost';
-    socket = new WebSocket(wsScheme + '//' + host + ':8080');
+    socket = new WebSocket(wsScheme + '//' + host + ':8000');
 
     socket.addEventListener('open', () => {
         console.log('Conectado al servidor WebSocket');
