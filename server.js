@@ -277,7 +277,6 @@ wss.on('connection', (ws) => {
 
   ws.on('close', () => {
     console.log('Cliente desconectado');
-    // If owner disconnects, notify and remove game
     if (juegosPorCliente.has(ws)) {
       const juego = juegosPorCliente.get(ws);
       const entry = gamesById.get(juego.id);
